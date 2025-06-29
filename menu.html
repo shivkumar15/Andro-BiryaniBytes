@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: rgb(217, 209, 209);
+            /* color: #fff; */
+            color: black !important;
+            font-family: cursive;
+        }
+        
+        .navbar-dark .navbar-nav .nav-link.active {
+            color: #000000;
+        }
+        .container h2{
+            color:black;
+        }
+        h2 {
+            border-left: 5px solid #ffc107;
+            padding-left: 15px;
+            margin-bottom: 30px;
+        }
+        
+        .card:hover {
+            transform: scale(1.02);
+            transition: all 0.3s ease-in-out;
+        }
+        
+        .menu-category {
+            color: black;
+            margin-top: 50px;
+        }
+        
+        .price {
+            font-weight: bold;
+            color: #212529;
+        }
+        
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid" style="gap:0.5rem;">
+            <img  src="logo.png" style="height: 40px; border-radius: 50%;">
+           <a class="navbar-brand" href="#" style="color: #ffc107; ">Biryani Bytes</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="menu.html">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.php">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="container my-5">
+        <h2 class="text-dark" style="color: #000000;"> Our Delicious Menu</h2>
+
+        <!-- Starters -->
+        <div class="menu-category">
+            <h4 class="text-dark">Starters</h4>
+            <div class="row row-cols-1 row-cols-md-3 g-4 mt-2">
+                <div class="col">
+                    <div class="card text-dark  h-100">
+                        <img src="https://media.istockphoto.com/id/1313085999/photo/fried-vegetable-spring-rolls-with-sweet-chili-and-soya-sauce-on-wooden-board.jpg?s=612x612&w=0&k=20&c=OM1OfrBS7D4666h9eZtztqFmQW0Ch15bcMcNbYhUBIo=" class="card-img-top" alt="Veg Spring Rolls">
+                        <div class="card-body">
+                            <h5 class="card-title">Veg Spring Rolls</h5>
+                            <p class="card-text">Crispy rolls stuffed with mixed vegetables.</p>
+                            <span class="price">₹120</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card text-dark  h-100">
+                        <img src="https://media.istockphoto.com/id/1320005396/photo/chicken-tikka-kebab.jpg?s=612x612&w=0&k=20&c=CeJ-Bq-TN9B9O7x3fejz_PVXy5YYv0VLqQp6C6hNyjc=" class="card-img-top" alt="Chicken Tikka">
+                        <div class="card-body">
+                            <h5 class="card-title">Chicken Tikka</h5>
+                            <p class="card-text">Tender chicken grilled with spices.</p>
+                            <span class="price">₹180</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card text-dark  h-100">
+                        <img src="https://media.istockphoto.com/id/1496146981/photo/selective-focus-of-paneer-pakora-made-of-cottage-cheese.jpg?s=612x612&w=0&k=20&c=2W3ea3olB698yNvHrb_vxjp89YGQJCIxm2bQ6QwCWLE=" class="card-img-top" alt="Paneer Pakora">
+                        <div class="card-body">
+                            <h5 class="card-title">Paneer Pakora</h5>
+                            <p class="card-text">Cottage cheese fritters with chutney.</p>
+                            <span class="price">₹140</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Courses -->
+        <div class="menu-category">
+            <h4 class="text-dark">Main Courses</h4>
+            <div class="row row-cols-1 row-cols-md-3 g-4 mt-2">
+                <div class="col">
+                    <div class="card text-dark  h-100">
+                        <img src="https://media.istockphoto.com/id/639389404/photo/authentic-indian-food.jpg?s=612x612&w=0&k=20&c=gbfAu17L1gtHmuo5biByhfCefAtYUtGQpyxMmi9_Mus=" class="card-img-top" alt="Butter Chicken">
+                        <div class="card-body">
+                            <h5 class="card-title">Butter Chicken</h5>
+                            <p class="card-text">Creamy spiced chicken served with naan.</p>
+                            <span class="price">₹260</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card text-dark  h-100">
+                        <img src="https://media.istockphoto.com/id/1305516669/photo/shahi-paneer-or-paneer-kadai.jpg?s=612x612&w=0&k=20&c=DO--pEfzfOdpResHc3m4JJQVSvHrNtK58zbC4xl4yaU=" class="card-img-top" alt="Paneer Butter Masala">
+                        <div class="card-body">
+                            <h5 class="card-title">Paneer Butter Masala</h5>
+                            <p class="card-text">Rich tomato gravy with soft paneer cubes.</p>
+                            <span class="price">₹220</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card text-dark  h-100">
+                        <img src="https://media.istockphoto.com/id/1292442851/photo/traditional-hyderabadi-vegetable-veg-dum-biryani-with-mixed-veggies-served-with-mixed-raita.jpg?s=612x612&w=0&k=20&c=FPsC5CB9UqiS09045jGu_hd3dgPHH1Z9IZm6JXe2yNA=" class="card-img-top" alt="Veg Biryani">
+                        <div class="card-body">
+                            <h5 class="card-title">Veg Biryani</h5>
+                            <p class="card-text">Aromatic basmati rice cooked with veggies.</p>
+                            <span class="price">₹180</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Desserts -->
+        <div class="menu-category">
+            <h4 class="text-dark">Desserts</h4>
+            <div class="row row-cols-1 row-cols-md-3 g-4 mt-2">
+                <div class="col">
+                    <div class="card text-dark  h-100">
+                        <img src="https://media.istockphoto.com/id/521803129/photo/gulab-jamun-11.jpg?s=612x612&w=0&k=20&c=wyJaXY7Uu0hMBCXkcTDRaujSKN6Rp9roJeKDvF6CfHI=" class="card-img-top" alt="Gulab Jamun">
+                        <div class="card-body">
+                            <h5 class="card-title">Gulab Jamun</h5>
+                            <p class="card-text">Sweet dumplings soaked in rose-flavored syrup.</p>
+                            <span class="price">₹80</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card text-dark  h-100">
+                        <img src="https://media.istockphoto.com/id/1044080542/photo/indian-rasgulla-or-rosogulla-dessert-sweet-served-in-a-bowl-selective-focus.jpg?s=612x612&w=0&k=20&c=tdAE1jz-B43HcrqBL7dLSiV9tTchIVuPqFY0nMwrzrs=" class="card-img-top" alt="Rasgulla">
+                        <div class="card-body">
+                            <h5 class="card-title">Rasgulla</h5>
+                            <p class="card-text">Soft cottage cheese balls in light syrup.</p>
+                            <span class="price">₹75</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card text-dark  h-100">
+                        <img src="https://media.istockphoto.com/id/936205852/photo/chocolate-ice-cream-in-a-glass-cup.jpg?s=612x612&w=0&k=20&c=gcPTroDVPNSlCS45BkqEG-6-REnKFEzboBpuX8O3lY4=" class="card-img-top" alt="Ice Cream Sundae">
+                        <div class="card-body">
+                            <h5 class="card-title">Ice Cream Sundae</h5>
+                            <p class="card-text">Trio of flavors topped with chocolate syrup.</p>
+                            <span class="price">₹90</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Beverages -->
+        <div class="menu-category">
+            <h4 class="text-dark">Beverages</h4>
+            <div class="row row-cols-1 row-cols-md-3 g-4 mt-2">
+                <div class="col">
+                    <div class="card text-dark  h-100">
+                        <img src="https://media.istockphoto.com/id/1336601313/photo/top-view-of-indian-herbal-masala-chai-or-traditional-beverage-tea-with-milk-and-spices-kerala.jpg?s=612x612&w=0&k=20&c=txjXqXtu3_PcA0ztNxyNVXJ-YziORr2XnuHWIriNEKk=" class="card-img-top" alt="Masala Chai">
+                        <div class="card-body">
+                            <h5 class="card-title">Masala Chai</h5>
+                            <p class="card-text">Traditional Indian tea with aromatic spices.</p>
+                            <span class="price">₹40</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card text-dark  h-100">
+                        <img src="https://media.istockphoto.com/id/1008799838/photo/image-of-a-glass-of-lassi-made-from-milk-curd.jpg?s=612x612&w=0&k=20&c=L--UXX-L2bsK6Jy-mEigONFj9QEJyvU8b77FJnBLpBg=" class="card-img-top" alt="Lassi">
+                        <div class="card-body">
+                            <h5 class="card-title">Lassi</h5>
+                            <p class="card-text">Sweet or salted yogurt-based drink.</p>
+                            <span class="price">₹50</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card text-dark  h-100">
+                        <img src="https://media.istockphoto.com/id/867813076/photo/cold-coffee-shake.jpg?s=612x612&w=0&k=20&c=lkdYRGQWogU8ezhdlhAX--z6VW1yEkxeugFJ6q5v-gE=" class="card-img-top" alt="Cold Coffee">
+                        <div class="card-body">
+                            <h5 class="card-title">Cold Coffee</h5>
+                            <p class="card-text">Iced coffee topped with cream and cocoa.</p>
+                            <span class="price">₹70</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
